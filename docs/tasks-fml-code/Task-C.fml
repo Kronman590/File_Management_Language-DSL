@@ -1,0 +1,14 @@
+currentFiles[] = "sample-files/Task-C/*"
+mySmallerFolder = "sample-files/Task-C/mySmallerFolder"
+myBiggerFolder = "sample-files/Task-C/myBiggerFolder"
+
+create mySmallerFolder
+create myBiggerFolder
+
+for (file in currentFiles[]) {
+    if (file.size < 10 MB) {
+	move file to mySmallerFolder
+    } else {
+    	move file to myBiggerFolder
+    }
+}

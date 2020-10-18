@@ -1,0 +1,2 @@
+toRenameFile = "sample-files/Task-A/RenameMe.txt"
+rename toRenameFile to "iAmANewName.txt"

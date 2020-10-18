@@ -1,0 +1,7 @@
+myNewFold = "sample-files/Task-B/myNewFolder"
+filesToCopy[] = "sample-files/Task-B/CopyFrom/*"
+
+create myNewFold
+for (f in filesToCopy[]) {
+     copy f to myNewFold
+}

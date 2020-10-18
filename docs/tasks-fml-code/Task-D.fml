@@ -1,0 +1,16 @@
+currentFiles[] = "sample-files/Task-D/*"
+mySmallerFolder = "sample-files/Task-D/mySmallerFolder"
+myBiggerFolder = "sample-files/Task-D/myBiggerFolder"
+
+create mySmallerFolder
+create myBiggerFolder
+
+for (file in currentFiles[]) {
+    if ((file.size < 10 MB) AND (file.extension == "jpg")) {
+	move file to mySmallerFolder
+    } else {
+    	move file to myBiggerFolder
+    }
+}
+
+compress mySmallerFolder
